@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="Index.css" />
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      src="Index.js"
+      language="javascript"
+      type="text/javascript"
+    ></script>
+    <title>MusicPlayer</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>DAW2-M09-UF2 Reproductor de musica</h1>
+    </header>
+
+    <div class="Content">
+      <div class="wrapper">
+        <div class="details">
+          <!-- <div class="now-playing">PLAYING x OF y</div> -->
+          <div class="track-art"></div>
+          <div class="track-name">Song Name</div>
+          <div class="track-artist">Artist Name</div>
+        </div>
+
+        <div>
+          <span class="material-icons"> volume_mute </span>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="99"
+            class="volume_slider"
+            onchange="setVolume()"
+          />
+          <span class="material-icons"> volume_down </span>
+        </div>
+
+        <div class="musicButtons">
+          <div class="previous-song" onclick="previousSong()">
+            <span class="material-icons"> skip_previous </span>
+          </div>
+          <div class="play-song" onclick="playSong()">
+            <span class="material-icons"> play_circle </span>
+          </div>
+
+          <div class="pause-song" onclick="pauseMusic()">
+            <span class="material-icons"> pause_circle </span>
+          </div>
+
+          <div class="next-song" onclick="nextSong()">
+            <span class="material-icons"> skip_next </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
