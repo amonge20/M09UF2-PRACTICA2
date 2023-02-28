@@ -1,43 +1,65 @@
 .container {
+    border: 1px black solid;
+    margin-left: 25%;
+    margin-right: 35%;
+    height: 100%;
+}
 
+.fondoCasete {
+    border: 1px bisque solid;
+    background-color: bisque;
+    width: 99.7%;
+    height: 98.4%;
+    margin-top: 13px;
+    margin-left: 0px;
 }
 
 .casete {
-
+    border: 1px rgb(30, 180, 43) solid;
+    border-radius: 8px;
+    background-color: rgb(30, 180, 43);
+    width: 94.6%;
+    height: 97%;
+    margin-top: -1px;
+    margin-left: 20px;
 }
 
-.cancion {
-
+#cancion {
+    border: 1px green solid;
+    border-radius: 8px;
+    background-color: green;
+    margin-top: 10px;
+    margin-left: 12px;
+    margin-right: 12px;
 }
 
-picture {
-
-}
-            
-.titol {
-
-}
-
-.artista {
-
+img {
+    border: 12px rgb(1, 75, 1) solid;
+    width: 43%;
+    height: 29%;
+    margin-left: 27%;
+    border-radius: 50%;
 }
 
-.minutos {
-
-}
-
-.reproductor {
-
+h1, h2, p {
+    text-align: center;
+    color: white;
 }
 
 .flex {
-
+    display: flex;
+    text-align: center;
+    border: 1px black solid;
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 30%;
 }
 
-/*svg {
+.input {
+    margin-top: 3px;
+}
 
-}*/
-
-.minutosR {
-
+#skip-revious-icon {
+    font-size: 40px;
 }

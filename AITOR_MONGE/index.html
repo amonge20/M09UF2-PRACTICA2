@@ -5,33 +5,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css">
         <script src="js/script.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head> 
     <body>
-        <div class="container">
-            <div class="casete">
-                <div class="cancion">
-                    <picture>
-                        
-                    </picture>
-                </div>
-                <div class="titol"></div>
-                <div class="artista"></div>
-                <div class="minutos"></div>
-                <div class="reproductor">
-                    <div class="flex">
-                        <svg></svg>
-                        <svg></svg>
-                        <svg></svg>
+        <section class="container">
+            <div class="fondoCasete">
+                <div class="casete">
+                    <div id="cancion">
+                        <img src="img/PlanetMusic.png" alt="dona voltes">
                     </div>
+                    <h1>Cançó 1</h1>
+                    <h2>Artista 1</h2>
+                    <p>3:00</p>
                     <div class="flex">
-                        <svg></svg>
-                        <svg></svg>
-                        <svg></svg>
-                        <div class="minutosR"></div>
+                        <div id="skip-previous-icon" class="material-icons icon">skip_previous</div>
+                        <div id="play-icon" class="material-icons icon1">play_circle</div>
+                        <div id="pause-icon" class="material-icons icon2"> pause_circle</div>
+                        <div id="skip-next-icon" class="material-icons icon3">skip_next</div>
+                    <div class="flex2">
+                        <div id="volume-mute-icon" class="material-icons icon4">volume_mute</div>
+                        <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="4">
+                        <div id="volume-down-icon" class="material-icons icon4">volume_down</div>
                     </div>
                 </div>
             </div>
         </div>
-        
-    </body>
+    </div>
+</section>
+</body>
 </html>
