@@ -56,10 +56,51 @@ h1, h2, p {
     height: 30%;
 }
 
-.input {
-    margin-top: 3px;
+#skip-previous-icon {
+    font-size: 60px;
+    margin-left: 25%;
+    margin-top: 10%;
 }
 
-#skip-revious-icon {
-    font-size: 40px;
+#skip-next-icon {
+    font-size: 60px;
+    margin-left: 7%;
+    margin-top: 10%;
+  }
+
+#play-icon{
+    font-size: 120px;
+    margin-left: 7%;
+    margin-top: 7%;
+}
+
+#pause-icon{
+    font-size: 120px;
+    margin-left: -17%;
+    margin-top: 7%;
+}
+
+#skip-previous-icon:hover {
+    color: blue;
+  }
+
+#skip-next-icon:hover {
+    color: blue;
+  }
+
+#play-icon:hover {
+    color: blue;
+  }
+
+#pause-icon:hover {
+    color: blue;
+  }
+
+.flex2 {
+    margin-left: -41.5%;
+    margin-top: 30%;
+}
+
+.input {
+    margin-top: 3px;
 }

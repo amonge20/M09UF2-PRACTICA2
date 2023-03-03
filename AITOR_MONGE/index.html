@@ -4,7 +4,6 @@
         <title>Reproductor de musica</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css">
-        <script src="js/script.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head> 
     <body>
@@ -19,8 +18,8 @@
                     <p>3:00</p>
                     <div class="flex">
                         <div id="skip-previous-icon" class="material-icons icon">skip_previous</div>
-                        <div id="play-icon" class="material-icons icon1">play_circle</div>
-                        <div id="pause-icon" class="material-icons icon2"> pause_circle</div>
+                        <div id="play-icon" class="material-icons icon1" onclick="start();">play_circle</div>
+                        <!-- <div id="pause-icon" class="material-icons icon2"> pause_circle</div> -->
                         <div id="skip-next-icon" class="material-icons icon3">skip_next</div>
                     <div class="flex2">
                         <div id="volume-mute-icon" class="material-icons icon4">volume_mute</div>
@@ -32,5 +31,20 @@
         </div>
     </div>
 </section>
+
+<script>
+
+
+const start = () => {
+
+    const icona_play = document.getElementById("play-icon");
+    icona_play.innerText = "pause_circle";
+    icona_play.innerText = "play_circle";
+    console.log("hola");
+
+}
+
+   
+</script>
 </body>
 </html>
