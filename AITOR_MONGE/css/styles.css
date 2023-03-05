@@ -1,3 +1,4 @@
+/*DISEÑO RADIOCASETE*/
 .container {
     border: 1px black solid;
     margin-left: 25%;
@@ -23,8 +24,8 @@
     margin-top: -1px;
     margin-left: 20px;
 }
-
-#cancion {
+/*IMAGENES DE LAS CANCIONES*/
+#albumes {
     border: 1px green solid;
     border-radius: 8px;
     background-color: green;
@@ -41,6 +42,18 @@ img {
     border-radius: 50%;
 }
 
+#album2 {
+    display: none;
+}
+
+#album3 {
+    display: none;
+}
+/*CANCIONES*/
+#canciones {
+    display: none;
+}
+
 h1, h2, p {
     text-align: center;
     color: white;
@@ -55,7 +68,11 @@ h1, h2, p {
     margin-right: 10px;
     height: 30%;
 }
-
+.flex2 {
+    margin-left: -38.1%;
+    margin-top: 30%;
+}
+/*ICONOS RADIOCASETE*/
 #skip-previous-icon {
     font-size: 60px;
     margin-left: 25%;
@@ -78,6 +95,7 @@ h1, h2, p {
     font-size: 120px;
     margin-left: -17%;
     margin-top: 7%;
+    display: none;
 }
 
 #skip-previous-icon:hover {
@@ -96,11 +114,16 @@ h1, h2, p {
     color: blue;
   }
 
-.flex2 {
-    margin-left: -41.5%;
-    margin-top: 30%;
-}
-
 .input {
     margin-top: 3px;
 }
+/*ANIMACIÓN CSS*/
+@keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

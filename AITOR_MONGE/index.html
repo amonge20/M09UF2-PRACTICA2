@@ -10,21 +10,29 @@
         <section class="container">
             <div class="fondoCasete">
                 <div class="casete">
-                    <div id="cancion">
-                        <img src="img/PlanetMusic.png" alt="dona voltes">
+                    <div id="albumes">
+                        <img id="album1" src="img/PlanetMusic.png" alt="dona voltes">
+                        <img id="album2" src="img/DiscMusic.jpg" alt="dona voltes">
+                        <img id="album2" src="img/AuricularRosa.jpg" alt="dona voltes">
                     </div>
+                <audio id="canciones">
+                        <source src="music/Beluga_-_Joyful_In_The_Sunrise_(feat._urmymuse).mp3" type="audio/mpeg">
+                        <source src="music/raja_ffm_-_No_Way.mp3" type="audio/mpeg">
+                        <source src="./audios/song3.mp3" type="audio/mpeg">
+                </audio>
                     <h1>Cançó 1</h1>
                     <h2>Artista 1</h2>
                     <p>3:00</p>
                     <div class="flex">
-                        <div id="skip-previous-icon" class="material-icons icon">skip_previous</div>
-                        <div id="play-icon" class="material-icons icon1" onclick="start();">play_circle</div>
-                        <!-- <div id="pause-icon" class="material-icons icon2"> pause_circle</div> -->
-                        <div id="skip-next-icon" class="material-icons icon3">skip_next</div>
+                        <div id="skip-previous-icon" class="material-icons icon" onclick="skip()">skip_previous</div>
+                        <div id="play-icon" class="material-icons icon1" onclick="start()">play_circle</div>
+                        <div id="pause-icon" class="material-icons icon2" onclick="stop()"> pause_circle</div>
+                        <div id="skip-next-icon" class="material-icons icon3" onclick="next()">skip_next</div>
                     <div class="flex2">
                         <div id="volume-mute-icon" class="material-icons icon4">volume_mute</div>
                         <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="4">
                         <div id="volume-down-icon" class="material-icons icon4">volume_down</div>
+                        <div>50</div>
                     </div>
                 </div>
             </div>
@@ -33,18 +41,16 @@
 </section>
 
 <script>
-
-
 const start = () => {
 
-    const icona_play = document.getElementById("play-icon");
-    icona_play.innerText = "pause_circle";
-    icona_play.innerText = "play_circle";
-    console.log("hola");
+const icona_play = document.getElementById("play-icon");
+icona_play.innerText = "pause_circle";
+icona_play.innerText = "play_circle";
+console.log("hola");
 
 }
 
-   
+
 </script>
 </body>
 </html>
